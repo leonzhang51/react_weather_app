@@ -1,0 +1,94 @@
+/*add circle background for current weather info*/
+.current_weather {
+    height: 18vw;
+    width: 18vw;
+    background-color: black;
+    border-radius: 50%;
+    opacity: 0.45;
+    margin: 4vh auto;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+
+.detail_info {
+    display: flex;
+    justify-content: center;
+}
+
+.side_info,
+.center_info {
+    display: grid;
+    place-items: center;
+    color: white;
+
+}
+
+.center_info h4 {
+    margin: -2% auto;
+}
+
+.center_info p {
+    margin-top: -2%;
+    ;
+}
+
+.center_info table {
+
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border: 0px solid #dddddd;
+    margin: auto;
+
+
+}
+
+.center_info table td {
+    color: white;
+}
+
+.future_7days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.info_day {
+    flex: 1 1 150px;
+    /*  Stretching: */
+    flex: 0 1 150px;
+    /*  No stretching: */
+    margin: 5px;
+    color: white;
+}
+
+
+@media screen and (max-width: 480px) {
+    .current_weather {
+        height: 65vw;
+        width: 65vw;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .current_weather {
+        height: 50vw;
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .current_weather {
+        height: 40vw;
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .current_weather {
+        height: 30vw;
+        width: 30vw;
+    }
+}
